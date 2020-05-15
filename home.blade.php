@@ -35,7 +35,7 @@
 
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
     <script type="text/javascript">
-
+        getFileList();
         function getFileList(){
             axios.get('/fileList').then(function (response) {
                 let jsonData= response.data;
